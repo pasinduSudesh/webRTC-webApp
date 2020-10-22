@@ -6,7 +6,7 @@ const port = process.env.PORT || 3000
 //public folder
 app.use(express.static(__dirname + "/public"))
 let clients = 0
-
+//ssss
 io.on('connection', function (socket) {
     socket.on("NewClient", function () {
         if (clients < 2) {
